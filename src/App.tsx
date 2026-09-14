@@ -17,7 +17,6 @@ import Auth from "./pages/Auth";
 import ResetPassword from "./pages/ResetPassword";
 import Register from "./pages/Register";
 import Ticket from "./pages/Ticket";
-import Unsubscribe from "./pages/Unsubscribe";
 import CompanyPage from "./pages/dashboard/CompanyPage";
 import Events from "./pages/dashboard/Events";
 // Legacy wizard removed — events are now created/edited inline on EventDetail.
@@ -63,7 +62,6 @@ const App = () => (
               <Route path="/register/:slug" element={<Register />} />
               <Route path="/register/:slug/:variant" element={<Register />} />
               <Route path="/ticket/:registrationId" element={<Ticket />} />
-              <Route path="/unsubscribe" element={<Unsubscribe />} />
               
               <Route path="/cohost/accept" element={<AcceptCohostInvitation />} />
 
